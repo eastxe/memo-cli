@@ -10,6 +10,7 @@ cd memo-cli
 uv venv .venv
 source .venv/bin/activate
 uv pip install -e .
+deactivate
 
 # シンボリックリンクを作成
 ln -s "$(pwd)/.venv/bin/memo" ~/.local/bin/memo
