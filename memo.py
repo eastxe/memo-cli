@@ -55,7 +55,7 @@ def add(text):
     if HEADER in lines:
         # 既に ### memo がある → そのセクションの末尾を探す
         idx = lines.index(HEADER) + 1
-        while idx < len(lines) and not lines[idx].startswith("###"):
+        while idx < len(lines) and not lines[idx].startswith("#"):
             idx += 1
         lines.insert(idx, entry)  # 末尾（次のセクション直前）に挿入
     else:
