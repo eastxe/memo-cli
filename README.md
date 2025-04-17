@@ -55,4 +55,5 @@ uv pip install -e .
 フォーマット
 ```
 uv run ruff check memo.py
+uv run ruff format memo.py
 ```
